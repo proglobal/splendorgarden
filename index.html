@@ -6,10 +6,28 @@
     <title>Portal Assembleias Splendor Garden</title>
     <style>
         :root {
-            --primary: #2563eb; --bg: #f8fafc; --text: #1e293b; --gray: #64748b;
-            --color-total: #2563eb; --color-aprovo: #22c55e; --color-reprovo: #ef4444;
-            --color-c1: #3b82f6; --color-c2: #8b5cf6; --color-c3: #f59e0b;
-            --color-c4: #ec4899; --color-c5: #06b6d4; --color-abstencao: #94a3b8;
+            --primary: #2563eb;
+			--bg: #f8fafc;
+			--text: #1e293b;
+			--gray: #64748b;
+            --color-total: #2563eb;
+			--color-aprovo: #22c55e;
+			--color-reprovo: #ef4444;
+            --color-c1: #3b82f6;
+			--color-c2: #8b5cf6;
+			--color-c3: #f59e0b;
+            --color-c4: #ec4899;
+			--color-c5: #06b6d4;
+			--color-abstencao: #94a3b8;
+			--card-1: #1E3A8A;
+			--card-2: #06B6D4;
+			--card-3: #059669;
+			--card-4: #16A34A;
+			--card-5: #F59E0B;
+			--card-6: #EA580C;
+			--card-7: #DC2626;
+			--card-8: #6D28D9;
+			--card-9: #1F2937;
         }
         * { box-sizing: border-box; }
         body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--text); padding: 10px; margin: 0; }
@@ -41,6 +59,15 @@
         .border-c1 { border-top-color: var(--color-c1); }
         .border-c2 { border-top-color: var(--color-c2); }
         .border-abstencao { border-top-color: var(--color-abstencao); }
+		.border-card1 { border-top-color: var(--card-1); }
+		.border-card2 { border-top-color: var(--card-2); }
+		.border-card3 { border-top-color: var(--card-3); }
+		.border-card4 { border-top-color: var(--card-4); }
+		.border-card5 { border-top-color: var(--card-5); }
+		.border-card6 { border-top-color: var(--card-6); }
+		.border-card7 { border-top-color: var(--card-7); }
+		.border-card8 { border-top-color: var(--card-8); }
+		.border-card9 { border-top-color: var(--card-9); }
 
         /* GRID DE TORRES */
         .torres-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(85px, 1fr)); gap: 8px; margin-bottom: 20px; }
@@ -61,6 +88,15 @@
         .bg-c1 { background: var(--color-c1); }
         .bg-c2 { background: var(--color-c2); }
         .bg-abstencao { background: var(--color-abstencao); }
+		.bg-card1 { background: var(--card-1); }
+		.bg-card2 { background: var(--card-2); }
+		.bg-card3 { background: var(--card-3); }
+		.bg-card4 { background: var(--card-4); }
+		.bg-card5 { background: var(--card-5); }
+		.bg-card6 { background: var(--card-6); }
+		.bg-card7 { background: var(--card-7); }
+		.bg-card8 { background: var(--card-8); }
+		.bg-card9 { background: var(--card-9); }
     </style>
 </head>
 <body>
@@ -95,6 +131,3251 @@
 <script>
 // DADOS MOCADOS PARA TESTE
 const bancoDeDados = {
+	"age_2024_01_08": {
+        nome: "AGE - 08/01/2024",
+        pautas: [
+			{
+				titulo: "Item 1: Eleição Síndico 'tampão'",
+				unidades: [
+  {
+    "nome": "CELSO FERREIRA DA SILVA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "13 BL A"
+  },
+  {
+    "nome": "FLÁVIA QUETZ PEREIRA MARIANO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "22 BL A"
+  },
+  {
+    "nome": "JOSE ALBERTO SIQUEIRA GOMES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "23 BL A"
+  },
+  {
+    "nome": "GERSON LUIS BARON",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "24 BL A"
+  },
+  {
+    "nome": "GESLEI BERALDO DE LIMA E SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "44 BL A"
+  },
+  {
+    "nome": "LAMAR DIAMANTE MUNHOLI",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "51 BL A"
+  },
+  {
+    "nome": "YARA REGINA DE OLIVEIRA / FABIO LUIZ VEIGA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "62 BL A"
+  },
+  {
+    "nome": "BARBARA ROCHA ARAUJO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "71 BL A"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "74 BL A"
+  },
+  {
+    "nome": "JANICE EMI TANAAMI / RUI ETSUO TANAAMI",
+    "status": "Ricardo Favaro",
+    "unidade": "81 BL A"
+  },
+  {
+    "nome": "ALEXANDRE ALVES DOS SANTOS",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "83 BL A"
+  },
+  {
+    "nome": "CINTIA BACCI DAMASCENO ROCHA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "91 BL A"
+  },
+  {
+    "nome": "STEPHANIE COSTA JORY SILVA / RAFAEL HENRIQUE DA SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "102 BL A"
+  },
+  {
+    "nome": "DULCINEA ZORZANELLI DA SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "104 BL A"
+  },
+  {
+    "nome": "CRISTIANE ALVES DE LIMA",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "123 BL A"
+  },
+  {
+    "nome": "RUBENS MOACIR COSTA",
+    "status": "André Luiz - AC",
+    "unidade": "141 BL A"
+  },
+  {
+    "nome": "MATHEUS BUENO DA SILVEIRA ENDLER / ALINE REIS FOGAÇA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "162 BL A"
+  },
+  {
+    "nome": "LIDIANE CARRILHO SANCHES DE ARAUJO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "201 BL A"
+  },
+  {
+    "nome": "ELIANE FIGUEIRA RODRIGUES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "214 BL A"
+  },
+  {
+    "nome": "PAULO CESAR DA SILVA ANCIAES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "221 BL A"
+  },
+  {
+    "nome": "RAFAEL MEDEIROS LUCIO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "222 BL A"
+  },
+  {
+    "nome": "JOSE MARTINS DO AMARAL SOBRINHO",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "233 BL A"
+  },
+  {
+    "nome": "MAURO NABOEL DE OLIVEIRA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "252 BL A"
+  },
+  {
+    "nome": "ALEIDE WALESKA DE CARVALHO HRYCYNA / GUSTAVO HOMANN HRYCYNA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "253 BL A"
+  },
+  {
+    "nome": "ANDRE YOSHIMI KUSUMOTO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "264 BL A"
+  },
+  {
+    "nome": "JENIFER RUBIA DE CAMPOS LOPES SAMPAIO",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "273 BL A"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Edvania - Valim e Associados",
+    "unidade": "33 BL B"
+  },
+  {
+    "nome": "ADRIANA SIDNEA DE CARVALHO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "72 BL B"
+  },
+  {
+    "nome": "WALDYR LUIS ABDUCH FABREGA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "102 BL B"
+  },
+  {
+    "nome": "MARIANA TEIXEIRA ARDUINI",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "112 BL B"
+  },
+  {
+    "nome": "GUILHERME BATISTELLI MAGALHÃES",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "124 BL B"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Edvania - Valim e Associados",
+    "unidade": "153 BL B"
+  },
+  {
+    "nome": "MAURICIO DECINA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "174 BL B"
+  },
+  {
+    "nome": "ALEXANDRO RODRIGO SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "184 BL B"
+  },
+  {
+    "nome": "CLAUDIA REGINA GASQUE SCHOOF / EMERSON AUGUSTO DA SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "192 BL B"
+  },
+  {
+    "nome": "GERSON LUIS BARON",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "251 BL B"
+  },
+  {
+    "nome": "LUCAS HENRIQUE NACEV",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "252 BL B"
+  },
+  {
+    "nome": "ELISANGELA SOUZA MATOS",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "264 BL B"
+  },
+  {
+    "nome": "GILSON RIBEIRO MONTI",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "271 BL B"
+  },
+  {
+    "nome": "FRONILTON JOSE DE SOUZA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "31 BL C"
+  },
+  {
+    "nome": "LUCIANA TECERON MOREIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "33 BL C"
+  },
+  {
+    "nome": "FRANCISCO LIMA NETO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "34 BL C"
+  },
+  {
+    "nome": "DIEGO HERNANDEZ ARJONI",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "62 BL C"
+  },
+  {
+    "nome": "FERNANDA MALAGUTTI TOME",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "63 BL C"
+  },
+  {
+    "nome": "CAROLINA DOS SANTOS PACHECO CONCEIÇÃO/FLAVIO DA CONCEIÇÃO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "64 BL C"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "74 BL C"
+  },
+  {
+    "nome": "LUCAS FABRIN MANZOLI / ANA CAROLINA BELLINI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "81 BL C"
+  },
+  {
+    "nome": "JULIANA DA SILVA RODRIGUES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "92 BL C"
+  },
+  {
+    "nome": "TATIANA CAMILA DE SOUZA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "103 BL C"
+  },
+  {
+    "nome": "LETICIA DE CASTRO NAVAS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "111 BL C"
+  },
+  {
+    "nome": "MARCELO AFONSO DE FARIA RODRIGUES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "112 BL C"
+  },
+  {
+    "nome": "JOAQUIM DA SILVEIRA COELHO NETO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "123 BL C"
+  },
+  {
+    "nome": "MARLEI GONÇALVES DE LIMA / LUIZ CARLOS DE LIMA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "154 BL C"
+  },
+  {
+    "nome": "AISLAN ROBERTO VIANA BUENO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "163 BL C"
+  },
+  {
+    "nome": "ANA MARIA FALOTICO",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "221 BL C"
+  },
+  {
+    "nome": "JILSON AILTON RIBEIRO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "234 BL C"
+  },
+  {
+    "nome": "MARCELO PASQUALI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "242 BL C"
+  },
+  {
+    "nome": "GERSON LUIS BARON",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "261 BL C"
+  },
+  {
+    "nome": "ANA LUCIA DE SOUZA SANTINI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "272 BL C"
+  },
+  {
+    "nome": "REINALDO KOITI TANITA",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "273 BL C"
+  },
+  {
+    "nome": "CLAUDIONOR CARVALHO DA SILVA",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "274 BL C"
+  },
+  {
+    "nome": "THIAGO SANTOS COSTA",
+    "status": "Leticia Lima",
+    "unidade": "22 BL D"
+  },
+  {
+    "nome": "CAROLINA BOTTINI PRATES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "23 BL D"
+  },
+  {
+    "nome": "EDUARDO GOMES PEREIRA BALOG",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "43 BL D"
+  },
+  {
+    "nome": "HEITOR ANGELO MORAES JUNIOR",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "53 BL D"
+  },
+  {
+    "nome": "POLLYANNA DE FREITAS CASTRO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "104 BL D"
+  },
+  {
+    "nome": "SERGIO FERNANDO DE CARVALHO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "111 BL D"
+  },
+  {
+    "nome": "LUCIANA VALENTE FRAGA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "112 BL D"
+  },
+  {
+    "nome": "ANA PAULA DE LIMA/FABRÍCIO LUIZ SILVEIRA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "113 BL D"
+  },
+  {
+    "nome": "ANDRE ANDRADE DE ALMEIDA / RAFAELE ALVES DE ALMEIDA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "121 BL D"
+  },
+  {
+    "nome": "ANNE CAROLINE DE MEDEIROS TAKAHASHI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "123 BL D"
+  },
+  {
+    "nome": "ADRIANA ALVES FERNANDES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "131 BL D"
+  },
+  {
+    "nome": "LETICIA HELENA GIOVANETTI SANTOS / RAFAEL DE BARROS SANTOS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "142 BL D"
+  },
+  {
+    "nome": "MATEUS JOSÉ DAMASCENO DE ANDRADE / ROSANA PAIVA MOTA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "153 BL D"
+  },
+  {
+    "nome": "VILMA DE FRANÇA NICOLAU / JÚLIO CÉSAR NICOLAU",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "161 BL D"
+  },
+  {
+    "nome": "HAMILTON SANTOS MIRANDA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "162 BL D"
+  },
+  {
+    "nome": "LAURA RODRIGUES FIGUEIREDO DA SILVA",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "183 BL D"
+  },
+  {
+    "nome": "ARTHUR M. VILELLA / MARCIA D. S. VILELLA",
+    "status": "André Luiz - AC",
+    "unidade": "184 BL D"
+  },
+  {
+    "nome": "IGOR EMIDIO DE PAULA",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "191 BL D"
+  },
+  {
+    "nome": "CRISTINA MENDES VILELLA",
+    "status": "André Luiz - AC",
+    "unidade": "203 BL D"
+  },
+  {
+    "nome": "MARCELINO APARECIDO DEMETRIO",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "204 BL D"
+  },
+  {
+    "nome": "EUGENIO CALIL PEDRO / ELAINE SPINDOLA ROSA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "211 BL D"
+  },
+  {
+    "nome": "GERSON LUIS BARON",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "212 BL D"
+  },
+  {
+    "nome": "VALDIRENE DOS SANTOS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "242 BL D"
+  },
+  {
+    "nome": "PAULO HENRIQUE DE ALMEIDA NASCIMENTO DOS SANTOS",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "261 BL D"
+  },
+  {
+    "nome": "RAFAEL HENRIQUE MAURO MOREIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "263 BL D"
+  },
+  {
+    "nome": "GREICY MARA MENGUE FENIMAN",
+    "status": "Edvania - Valim e Associados",
+    "unidade": "11 BL E"
+  },
+  {
+    "nome": "ELAINE CRISTINA ARAUJO MOLINARI / PAULO CIRINEU MOLINARI",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "12 BL E"
+  },
+  {
+    "nome": "MILTON KEIJI GOTO",
+    "status": "André Luiz - AC",
+    "unidade": "21 BL E"
+  },
+  {
+    "nome": "LUIZ MANOEL GOMES MOREIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "32 BL E"
+  },
+  {
+    "nome": "PAULO EDUARDO CORSINI",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "34 BL E"
+  },
+  {
+    "nome": "JULIO CESAR MORGADO VITTORATO",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "41 BL E"
+  },
+  {
+    "nome": "AMARILDO RIBEIRO DE SOUZA",
+    "status": "Leticia Lima",
+    "unidade": "62 BL E"
+  },
+  {
+    "nome": "MARCOS PAULO DE OLIVEIRA GUEDES / PRISCILA SARDINHA MOTTA GU",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "82 BL E"
+  },
+  {
+    "nome": "JULIO SERGIO DA SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "94 BL E"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "104 BL E"
+  },
+  {
+    "nome": "MANOEL ALONSO GAN / ANA CRISTINA PEDROSO ALONSO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "113 BL E"
+  },
+  {
+    "nome": "RAFAEL ROBERTO LOPES/LUCIANA XAVIER MOTTA LOPES",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "123 BL E"
+  },
+  {
+    "nome": "LUIZ GUSTAVO DE CARVALHO QUERUBINO",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "131 BL E"
+  },
+  {
+    "nome": "FELIPPE GALIANE GARMBIS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "133 BL E"
+  },
+  {
+    "nome": "JOAO MARCELO NUNES DE PAULA",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "152 BL E"
+  },
+  {
+    "nome": "MARCELO HENRIQUE ESSADO DE MORAIS",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "153 BL E"
+  },
+  {
+    "nome": "HUMBERTO DURANS KINJO/CLARICE LEÃO LOPES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "154 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "172 BL E"
+  },
+  {
+    "nome": "DEMETRIUS DE OLIVEIRA E SILVA",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "181 BL E"
+  },
+  {
+    "nome": "FABIANO NASCIMENTO DA SILVA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "202 BL E"
+  },
+  {
+    "nome": "GABRIEL TORRES DE JESUS",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "203 BL E"
+  },
+  {
+    "nome": "CRISTIAN MENDES DE LIMA / PATRICIA FEITOSA BEZERRA DE LIMA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "211 BL E"
+  },
+  {
+    "nome": "JALNA SIQUEIRA KISO",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "213 BL E"
+  },
+  {
+    "nome": "DIEGO DE AGUIAR RIGUETE",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "244 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA (MONICA LAUER)",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "251 BL E"
+  },
+  {
+    "nome": "BRUNO SCHULTZ",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "252 BL E"
+  },
+  {
+    "nome": "SERGIO PEREIRA DE ALCANTARA / JULIANA COSTA ROUSSELET",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "264 BL E"
+  },
+  {
+    "nome": "ROSILEA AP. DE FARIA SANTOS",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "274 BL E"
+  },
+  {
+    "nome": "SANTIAGO DA SILVA VIEIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "14 BL F"
+  },
+  {
+    "nome": "HELOISA MUNIZ GARCIA BONJARDIM",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "22 BL F"
+  },
+  {
+    "nome": "HEVERTON LOPES DA OLIVEIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "31 BL F"
+  },
+  {
+    "nome": "HAROLDO JOSÉ DUPAS MASTRODOMENICO / ANA MARIA DE FÁTIMA CONTE",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "32 BL F"
+  },
+  {
+    "nome": "CHARLES DOS SANTOS BARBOSA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "33 BL F"
+  },
+  {
+    "nome": "FELIPE HENRIQUE DE OLIVEIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "34 BL F"
+  },
+  {
+    "nome": "FERNANDO HENRIQUE DE ARAUJO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "42 BL F"
+  },
+  {
+    "nome": "FABIANO MICHELMAN DE SOUSA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "43 BL F"
+  },
+  {
+    "nome": "LILIAN CORDEIRO TARZIA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "44 BL F"
+  },
+  {
+    "nome": "WILSON ANTONIO MANCIA",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "61 BL F"
+  },
+  {
+    "nome": "MARCOS VINICIO CONSIGLIO / ELISABETE AMARALS CONSIGLIO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "62 BL F"
+  },
+  {
+    "nome": "EDISON ARMANDO TAVANO/ADRIANA CAMPOS TAVANO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "63 BL F"
+  },
+  {
+    "nome": "GUILHERME SOARES E SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "64 BL F"
+  },
+  {
+    "nome": "ALEX SANDRO SILVESTRE MARTINS",
+    "status": "André Luiz - AC",
+    "unidade": "71 BL F"
+  },
+  {
+    "nome": "STELLA MOREIRA LIMA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "72 BL F"
+  },
+  {
+    "nome": "HELOISA HELENA FERREIRA CORREIA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "73 BL F"
+  },
+  {
+    "nome": "REDIRVAL BEGOTTI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "81 BL F"
+  },
+  {
+    "nome": "ANA THAIS RAMALHEIRO MATSURA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "93 BL F"
+  },
+  {
+    "nome": "PAULO HENRIQUE DA SILVA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "103 BL F"
+  },
+  {
+    "nome": "MICHELLE RIGAMONTI BOSCARIOL",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "104 BL F"
+  },
+  {
+    "nome": "MARCIO DE AQUINO NOGUEIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "112 BL F"
+  },
+  {
+    "nome": "JOÃO ORESTES JANINI",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "113 BL F"
+  },
+  {
+    "nome": "DANILO RODRIGUES DE SOUZA DIAS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "121 BL F"
+  },
+  {
+    "nome": "ROBERTO DELLAPE JUNIOR",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "122 BL F"
+  },
+  {
+    "nome": "RODOLFO GOSS FLORINDO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "133 BL F"
+  },
+  {
+    "nome": "RAFAEL DOS SANTOS MARCONDES",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "141 BL F"
+  },
+  {
+    "nome": "MILTON CARLOS FONSECA FRANÇA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "143 BL F"
+  },
+  {
+    "nome": "MARCEL NEMETALA GONÇALVES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "151 BL F"
+  },
+  {
+    "nome": "AFRANIO COSMO GONÇALVES DA ROCHA FILHO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "152 BL F"
+  },
+  {
+    "nome": "HAMILTON LUIS PEDROSO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "161 BL F"
+  },
+  {
+    "nome": "CLAUDIO ROGERIO GIANNASI / MARCIA RIBEIRO DA SILVA GIANNASI",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "162 BL F"
+  },
+  {
+    "nome": "MARCELO ROBERTO PEREIRA",
+    "status": "Edvania - Valim e Associados",
+    "unidade": "164 BL F"
+  },
+  {
+    "nome": "PETERSON CARLOS GONÇALVES",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "171 BL F"
+  },
+  {
+    "nome": "CLAYTON RANGEL PINTO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "174 BL F"
+  },
+  {
+    "nome": "QUESSIANE MARTINS GARAVELLO/RODRIGO LUIZ DOS SANTOS GARAVELL",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "181 BL F"
+  },
+  {
+    "nome": "MARIO SERGIO PULICE",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "183 BL F"
+  },
+  {
+    "nome": "BRUNO RAFAEL PINTO / CAMILA SAID MOREIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "184 BL F"
+  },
+  {
+    "nome": "RENATO ANZOLI BEGOTTI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "191 BL F"
+  },
+  {
+    "nome": "ANTONIO MARCOS LOPES DANTAS",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "203 BL F"
+  },
+  {
+    "nome": "CLEBER RODRIGUES DA FONSECA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "213 BL F"
+  },
+  {
+    "nome": "AGUINALDO PEREIRA DA SILVA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "221 BL F"
+  },
+  {
+    "nome": "ROSA MILENA MARSOLA / LUIS HENRIQUE BRIZZANTE",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "222 BL F"
+  },
+  {
+    "nome": "DANIEL CEGALINI",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "223 BL F"
+  },
+  {
+    "nome": "GERSON FONSECA DE AGUIAR",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "233 BL F"
+  },
+  {
+    "nome": "JANIO RODRIGUES DA SILVA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "234 BL F"
+  },
+  {
+    "nome": "JÚLIO CÉSAR BOTAN DIAS / CLAUDIA MENDES GUERRA DIAS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "241 BL F"
+  },
+  {
+    "nome": "CINTIA SANCHES DO AMARAL",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "253 BL F"
+  },
+  {
+    "nome": "RODRIGO UBIRATA GUNTHER LUX",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "254 BL F"
+  },
+  {
+    "nome": "ROBERTA MORAIS SIMOES DE ASSIS",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "262 BL F"
+  },
+  {
+    "nome": "FERNANDO RIBEIRO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "264 BL F"
+  },
+  {
+    "nome": "ANDERSON SANTOS MARTINS",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "273 BL F"
+  },
+  {
+    "nome": "ROSEMARY SUEKO YAMASHIRO DOS SANTOS",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "274 BL F"
+  },
+  {
+    "nome": "IVAN DOVAL MALDONADO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "281 BL F"
+  },
+  {
+    "nome": "RAFAEL VITORIA PEREIRA DA COSTA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "282 BL F"
+  },
+  {
+    "nome": "DOUGLAS CRISTIANO BARBOSA LOPES",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "284 BL F"
+  },
+  {
+    "nome": "ROSEMERI MELLO CARNEIRO BRAGA",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "11 BL G"
+  },
+  {
+    "nome": "VIVIANE APARECIDA DA ROSA FAGUNDES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "13 BL G"
+  },
+  {
+    "nome": "KLAUS JUERGEN JOHANSEN",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "33 BL G"
+  },
+  {
+    "nome": "ACÁCIO LUIS TEIXEIRA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "41 BL G"
+  },
+  {
+    "nome": "ALEX RENATO LIMA DE DEUS / ROBERTA DE ALMEIDA BONFIM DE DEU",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "53 BL G"
+  },
+  {
+    "nome": "LUIS EDUARDO COSTA LAURINO",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "113 BL G"
+  },
+  {
+    "nome": "GABRIEL AUGUSTO RUIVO / MARIA ANDREIA DE OLIVEIRA RUIVO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "123 BL G"
+  },
+  {
+    "nome": "NAIRA CAROLINA ARAUJO SOUZA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "142 BL G"
+  },
+  {
+    "nome": "RAFAEL SLAVOV",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "143 BL G"
+  },
+  {
+    "nome": "HELCIO DELFINO DOS SANTOS / MARI ANGELA DE MORAES SANTOS",
+    "status": "Leticia Lima",
+    "unidade": "154 BL G"
+  },
+  {
+    "nome": "GILMAR DE CASTRO SILVA",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "171 BL G"
+  },
+  {
+    "nome": "HUGO STEFANIO DE ALMEIDA / FABIANA REIS MORAES DE ALMEIDA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "203 BL G"
+  },
+  {
+    "nome": "EMANUEL JOSE PELOSO DE MORAIS / TASSIANE RAQUEL CUNHA MARTIN",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "241 BL G"
+  },
+  {
+    "nome": "ALINE ABRANTES DE CARVALHO AVILA DA SILVA/EDUARDO AVILA DA S",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "243 BL G"
+  },
+  {
+    "nome": "BRUNO AUGUSTO VIEIRA LOPES / FABIANE MORCIANE LOPES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "261 BL G"
+  },
+  {
+    "nome": "SERGIO HITOSHI YAMASHIRO",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "263 BL G"
+  },
+  {
+    "nome": "REGINA ANGELA PULICE",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "264 BL G"
+  },
+  {
+    "nome": "FELIPE BARBOSA MILEO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "272 BL G"
+  },
+  {
+    "nome": "NATHALIA BRANT MALTA SALGUEIRO / CAMILA DA SILVA BARROSO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "282 BL G"
+  },
+  {
+    "nome": "GUILHERME SOUSA VILAÇA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "283 BL G"
+  },
+  {
+    "nome": "FELIPPE DA SILVA MELLO / CAMILA ARAUJO RUAS MELLO",
+    "status": "Keise Luciane Clemente",
+    "unidade": "14 BL H"
+  },
+  {
+    "nome": "TASSIO CORTES CAVALCANTE",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "22 BL H"
+  },
+  {
+    "nome": "RUBENS DE ALEMIDA RODRIGUES / KENIA RODRIGUES BLAGHINI DAN",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "23 BL H"
+  },
+  {
+    "nome": "THIAGO DA SILVA PINHEIRO DOS SANTOS / THALITA PINHEIRO GOMES",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "41 BL H"
+  },
+  {
+    "nome": "RENATO ALEX SANDRO SOUSA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "42 BL H"
+  },
+  {
+    "nome": "EDUARDO VANDANEGA FRANÇA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "44 BL H"
+  },
+  {
+    "nome": "LEONARDO MELO DE LIMA / JULIANA CRISTINA DE HOLANDA DE LIMA",
+    "status": "Gilson Ribeiro - Morador",
+    "unidade": "62 BL H"
+  },
+  {
+    "nome": "GALENO SUNFELD FERNANDES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "71 BL H"
+  },
+  {
+    "nome": "LEONARDO BACELAR LIMA SANTOS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "74 BL H"
+  },
+  {
+    "nome": "GUERINO CASCAPERA NETO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "84 BL H"
+  },
+  {
+    "nome": "WANDA SERGIO DA SILVA",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "94 BL H"
+  },
+  {
+    "nome": "SERGIO SHOJI KISHI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "102 BL H"
+  },
+  {
+    "nome": "FERNANDO CESAR BARBOSA GONCALVES",
+    "status": "André Luiz - AC",
+    "unidade": "111 BL H"
+  },
+  {
+    "nome": "VALDINEA DA SILVA RODRIGUES",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "112 BL H"
+  },
+  {
+    "nome": "WILLIAM CORREA DE LUCAS / ADRIANA INOUE DE LUCAS",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "114 BL H"
+  },
+  {
+    "nome": "HENRIQUE LOURENÇO FILHO",
+    "status": "Leticia Lima",
+    "unidade": "121 BL H"
+  },
+  {
+    "nome": "LUIZ ANTONIO MOREIRA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "122 BL H"
+  },
+  {
+    "nome": "MARLON FERREIRA ARANTES / KARINA BONIFÁCIO DA SILVA ARANTES",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "131 BL H"
+  },
+  {
+    "nome": "MARIA APARECIDA BORGES PAPP",
+    "status": "Wagner Carlos - WSP",
+    "unidade": "171 BL H"
+  },
+  {
+    "nome": "ANA PAULA MARTINS CARNEIRO",
+    "status": "Elisangela Alves - Moradora",
+    "unidade": "182 BL H"
+  },
+  {
+    "nome": "OSWALDO LUIS RUSSO MILET FREITASOA",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "203 BL H"
+  },
+  {
+    "nome": "TIAGO STEPHAN WRIGHT",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "211 BL H"
+  },
+  {
+    "nome": "LUIZ CARLOS DONIZETTI SALLES / DENILCE CARDOSO DA SILVA SALL",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "222 BL H"
+  },
+  {
+    "nome": "ANDRE OROZIMBO RODRIGUES",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "232 BL H"
+  },
+  {
+    "nome": "EDUARDO LUIZ PALOMBO / LUCIANA TIEMI KUBA PALOMBO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "241 BL H"
+  },
+  {
+    "nome": "THAIS ANGELICA DE SOUZA DIAS NEGRI",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "252 BL H"
+  },
+  {
+    "nome": "ROBERTO PEPATO MELLADO",
+    "status": "Felipe Oliveira - Morador",
+    "unidade": "281 BL H"
+  }
+]
+			},
+			{
+				titulo: "Item 2: Eleição Conselheiros recomposição",
+				unidades: [
+  {
+    "nome": "CELSO FERREIRA DA SILVA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "13 BL A"
+  },
+  {
+    "nome": "CELSO FERREIRA DA SILVA",
+    "status": "Viviane - 13 G",
+    "unidade": "13 BL A"
+  },
+  {
+    "nome": "CELSO FERREIRA DA SILVA",
+    "status": "Sergio - 264 E",
+    "unidade": "13 BL A"
+  },
+  {
+    "nome": "JOSE ALBERTO SIQUEIRA GOMES",
+    "status": "Viviane - 13 G",
+    "unidade": "23 BL A"
+  },
+  {
+    "nome": "JOSE ALBERTO SIQUEIRA GOMES",
+    "status": "Eduardo - 241 H",
+    "unidade": "23 BL A"
+  },
+  {
+    "nome": "LAMAR DIAMANTE MUNHOLI",
+    "status": "Aislan - 163 C",
+    "unidade": "51 BL A"
+  },
+  {
+    "nome": "LAMAR DIAMANTE MUNHOLI",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "51 BL A"
+  },
+  {
+    "nome": "LAMAR DIAMANTE MUNHOLI",
+    "status": "Eduardo - 241 H",
+    "unidade": "51 BL A"
+  },
+  {
+    "nome": "YARA REGINA DE OLIVEIRA / FABIO LUIZ VEIGA",
+    "status": "Wanderli - 153 B",
+    "unidade": "62 BL A"
+  },
+  {
+    "nome": "YARA REGINA DE OLIVEIRA / FABIO LUIZ VEIGA",
+    "status": "Viviane - 13 G",
+    "unidade": "62 BL A"
+  },
+  {
+    "nome": "YARA REGINA DE OLIVEIRA / FABIO LUIZ VEIGA",
+    "status": "Eduardo - 241 H",
+    "unidade": "62 BL A"
+  },
+  {
+    "nome": "BARBARA ROCHA ARAUJO",
+    "status": "Wanderli - 153 B",
+    "unidade": "71 BL A"
+  },
+  {
+    "nome": "BARBARA ROCHA ARAUJO",
+    "status": "Viviane - 13 G",
+    "unidade": "71 BL A"
+  },
+  {
+    "nome": "BARBARA ROCHA ARAUJO",
+    "status": "Eduardo - 241 H",
+    "unidade": "71 BL A"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Eduardo - 241 H",
+    "unidade": "74 BL A"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Aislan - 163 C",
+    "unidade": "74 BL A"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Sergio - 264 E",
+    "unidade": "74 BL A"
+  },
+  {
+    "nome": "JANICE EMI TANAAMI / RUI ETSUO TANAAMI",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "81 BL A"
+  },
+  {
+    "nome": "JANICE EMI TANAAMI / RUI ETSUO TANAAMI",
+    "status": "Wanderli - 153 B",
+    "unidade": "81 BL A"
+  },
+  {
+    "nome": "JANICE EMI TANAAMI / RUI ETSUO TANAAMI",
+    "status": "Sergio - 264 E",
+    "unidade": "81 BL A"
+  },
+  {
+    "nome": "ALEXANDRE ALVES DOS SANTOS",
+    "status": "Viviane - 13 G",
+    "unidade": "83 BL A"
+  },
+  {
+    "nome": "CINTIA BACCI DAMASCENO ROCHA",
+    "status": "Aislan - 163 C",
+    "unidade": "91 BL A"
+  },
+  {
+    "nome": "CINTIA BACCI DAMASCENO ROCHA",
+    "status": "Eduardo - 241 H",
+    "unidade": "91 BL A"
+  },
+  {
+    "nome": "STEPHANIE COSTA JORY SILVA / RAFAEL HENRIQUE DA SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "102 BL A"
+  },
+  {
+    "nome": "STEPHANIE COSTA JORY SILVA / RAFAEL HENRIQUE DA SILVA",
+    "status": "Aislan - 163 C",
+    "unidade": "102 BL A"
+  },
+  {
+    "nome": "STEPHANIE COSTA JORY SILVA / RAFAEL HENRIQUE DA SILVA",
+    "status": "Viviane - 13 G",
+    "unidade": "102 BL A"
+  },
+  {
+    "nome": "DULCINEA ZORZANELLI DA SILVA",
+    "status": "Aislan - 163 C",
+    "unidade": "104 BL A"
+  },
+  {
+    "nome": "DULCINEA ZORZANELLI DA SILVA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "104 BL A"
+  },
+  {
+    "nome": "DULCINEA ZORZANELLI DA SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "104 BL A"
+  },
+  {
+    "nome": "RUBENS MOACIR COSTA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "141 BL A"
+  },
+  {
+    "nome": "RUBENS MOACIR COSTA",
+    "status": "Eduardo - 241 H",
+    "unidade": "141 BL A"
+  },
+  {
+    "nome": "RUBENS MOACIR COSTA",
+    "status": "Viviane - 13 G",
+    "unidade": "141 BL A"
+  },
+  {
+    "nome": "LIDIANE CARRILHO SANCHES DE ARAUJO",
+    "status": "Aislan - 163 C",
+    "unidade": "201 BL A"
+  },
+  {
+    "nome": "LIDIANE CARRILHO SANCHES DE ARAUJO",
+    "status": "Eduardo - 241 H",
+    "unidade": "201 BL A"
+  },
+  {
+    "nome": "LIDIANE CARRILHO SANCHES DE ARAUJO",
+    "status": "Viviane - 13 G",
+    "unidade": "201 BL A"
+  },
+  {
+    "nome": "YOUSSEF KALIL TARCHICHI / NURIA RENATA DE SOUSA TARCHICHI",
+    "status": "Eduardo - 241 H",
+    "unidade": "203 BL A"
+  },
+  {
+    "nome": "YOUSSEF KALIL TARCHICHI / NURIA RENATA DE SOUSA TARCHICHI",
+    "status": "Viviane - 13 G",
+    "unidade": "203 BL A"
+  },
+  {
+    "nome": "YOUSSEF KALIL TARCHICHI / NURIA RENATA DE SOUSA TARCHICHI",
+    "status": "Aislan - 163 C",
+    "unidade": "203 BL A"
+  },
+  {
+    "nome": "ELIANE FIGUEIRA RODRIGUES",
+    "status": "Viviane - 13 G",
+    "unidade": "214 BL A"
+  },
+  {
+    "nome": "ELIANE FIGUEIRA RODRIGUES",
+    "status": "Eduardo - 241 H",
+    "unidade": "214 BL A"
+  },
+  {
+    "nome": "ELIANE FIGUEIRA RODRIGUES",
+    "status": "Aislan - 163 C",
+    "unidade": "214 BL A"
+  },
+  {
+    "nome": "PAULO CESAR DA SILVA ANCIAES",
+    "status": "Eduardo - 241 H",
+    "unidade": "221 BL A"
+  },
+  {
+    "nome": "PAULO CESAR DA SILVA ANCIAES",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "221 BL A"
+  },
+  {
+    "nome": "PAULO CESAR DA SILVA ANCIAES",
+    "status": "Viviane - 13 G",
+    "unidade": "221 BL A"
+  },
+  {
+    "nome": "RAFAEL MEDEIROS LUCIO",
+    "status": "Viviane - 13 G",
+    "unidade": "222 BL A"
+  },
+  {
+    "nome": "RAFAEL MEDEIROS LUCIO",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "222 BL A"
+  },
+  {
+    "nome": "RAFAEL MEDEIROS LUCIO",
+    "status": "Eduardo - 241 H",
+    "unidade": "222 BL A"
+  },
+  {
+    "nome": "JOSE MARTINS DO AMARAL SOBRINHO",
+    "status": "Eduardo - 241 H",
+    "unidade": "233 BL A"
+  },
+  {
+    "nome": "ALEIDE WALESKA DE CARVALHO HRYCYNA / GUSTAVO HOMANN HRYCYNA",
+    "status": "Eduardo - 241 H",
+    "unidade": "253 BL A"
+  },
+  {
+    "nome": "ALEIDE WALESKA DE CARVALHO HRYCYNA / GUSTAVO HOMANN HRYCYNA",
+    "status": "Viviane - 13 G",
+    "unidade": "253 BL A"
+  },
+  {
+    "nome": "ALEIDE WALESKA DE CARVALHO HRYCYNA / GUSTAVO HOMANN HRYCYNA",
+    "status": "Aislan - 163 C",
+    "unidade": "253 BL A"
+  },
+  {
+    "nome": "ANDRE YOSHIMI KUSUMOTO",
+    "status": "Eduardo - 241 H",
+    "unidade": "264 BL A"
+  },
+  {
+    "nome": "ANDRE YOSHIMI KUSUMOTO",
+    "status": "Wanderli - 153 B",
+    "unidade": "264 BL A"
+  },
+  {
+    "nome": "ANDRE YOSHIMI KUSUMOTO",
+    "status": "Viviane - 13 G",
+    "unidade": "264 BL A"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Wanderli - 153 B",
+    "unidade": "33 BL B"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Eduardo - 241 H",
+    "unidade": "33 BL B"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Sergio - 264 E",
+    "unidade": "33 BL B"
+  },
+  {
+    "nome": "ADRIANA SIDNEA DE CARVALHO",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "72 BL B"
+  },
+  {
+    "nome": "ADRIANA SIDNEA DE CARVALHO",
+    "status": "Viviane - 13 G",
+    "unidade": "72 BL B"
+  },
+  {
+    "nome": "ADRIANA SIDNEA DE CARVALHO",
+    "status": "Sergio - 264 E",
+    "unidade": "72 BL B"
+  },
+  {
+    "nome": "WALDYR LUIS ABDUCH FABREGA",
+    "status": "Aislan - 163 C",
+    "unidade": "102 BL B"
+  },
+  {
+    "nome": "WALDYR LUIS ABDUCH FABREGA",
+    "status": "Sergio - 264 E",
+    "unidade": "102 BL B"
+  },
+  {
+    "nome": "WALDYR LUIS ABDUCH FABREGA",
+    "status": "Wanderli - 153 B",
+    "unidade": "102 BL B"
+  },
+  {
+    "nome": "MARIANA TEIXEIRA ARDUINI",
+    "status": "Eduardo - 241 H",
+    "unidade": "112 BL B"
+  },
+  {
+    "nome": "MARIANA TEIXEIRA ARDUINI",
+    "status": "Wanderli - 153 B",
+    "unidade": "112 BL B"
+  },
+  {
+    "nome": "MARIANA TEIXEIRA ARDUINI",
+    "status": "Viviane - 13 G",
+    "unidade": "112 BL B"
+  },
+  {
+    "nome": "GUILHERME BATISTELLI MAGALHÃES",
+    "status": "Eduardo - 241 H",
+    "unidade": "124 BL B"
+  },
+  {
+    "nome": "GUILHERME BATISTELLI MAGALHÃES",
+    "status": "Aislan - 163 C",
+    "unidade": "124 BL B"
+  },
+  {
+    "nome": "GUILHERME BATISTELLI MAGALHÃES",
+    "status": "Wanderli - 153 B",
+    "unidade": "124 BL B"
+  },
+  {
+    "nome": "TELMA VIEIRA LIMA PRADO",
+    "status": "Eduardo - 241 H",
+    "unidade": "134 BL B"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Wanderli - 153 B",
+    "unidade": "153 BL B"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Eduardo - 241 H",
+    "unidade": "153 BL B"
+  },
+  {
+    "nome": "WANDERLI DE ASSIS MELO",
+    "status": "Sergio - 264 E",
+    "unidade": "153 BL B"
+  },
+  {
+    "nome": "ALEXANDRO RODRIGO SILVA",
+    "status": "Aislan - 163 C",
+    "unidade": "184 BL B"
+  },
+  {
+    "nome": "ALEXANDRO RODRIGO SILVA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "184 BL B"
+  },
+  {
+    "nome": "ALEXANDRO RODRIGO SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "184 BL B"
+  },
+  {
+    "nome": "CLAUDIA REGINA GASQUE SCHOOF / EMERSON AUGUSTO DA SILVA",
+    "status": "Viviane - 13 G",
+    "unidade": "192 BL B"
+  },
+  {
+    "nome": "CLAUDIA REGINA GASQUE SCHOOF / EMERSON AUGUSTO DA SILVA",
+    "status": "Sergio - 264 E",
+    "unidade": "192 BL B"
+  },
+  {
+    "nome": "CLAUDIA REGINA GASQUE SCHOOF / EMERSON AUGUSTO DA SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "192 BL B"
+  },
+  {
+    "nome": "LUCAS HENRIQUE NACEV",
+    "status": "Aislan - 163 C",
+    "unidade": "252 BL B"
+  },
+  {
+    "nome": "LUCAS HENRIQUE NACEV",
+    "status": "Eduardo - 241 H",
+    "unidade": "252 BL B"
+  },
+  {
+    "nome": "LUCAS HENRIQUE NACEV",
+    "status": "Viviane - 13 G",
+    "unidade": "252 BL B"
+  },
+  {
+    "nome": "MAURINEY ROY MARQUES",
+    "status": "Aislan - 163 C",
+    "unidade": "261 BL B"
+  },
+  {
+    "nome": "MAURINEY ROY MARQUES",
+    "status": "Wanderli - 153 B",
+    "unidade": "261 BL B"
+  },
+  {
+    "nome": "MAURINEY ROY MARQUES",
+    "status": "Viviane - 13 G",
+    "unidade": "261 BL B"
+  },
+  {
+    "nome": "GILSON RIBEIRO MONTI",
+    "status": "Aislan - 163 C",
+    "unidade": "271 BL B"
+  },
+  {
+    "nome": "GILSON RIBEIRO MONTI",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "271 BL B"
+  },
+  {
+    "nome": "GILSON RIBEIRO MONTI",
+    "status": "Eduardo - 241 H",
+    "unidade": "271 BL B"
+  },
+  {
+    "nome": "FRONILTON JOSE DE SOUZA",
+    "status": "Eduardo - 241 H",
+    "unidade": "31 BL C"
+  },
+  {
+    "nome": "LUCIANA TECERON MOREIRA",
+    "status": "Aislan - 163 C",
+    "unidade": "33 BL C"
+  },
+  {
+    "nome": "LUCIANA TECERON MOREIRA",
+    "status": "Eduardo - 241 H",
+    "unidade": "33 BL C"
+  },
+  {
+    "nome": "LUCIANA TECERON MOREIRA",
+    "status": "Viviane - 13 G",
+    "unidade": "33 BL C"
+  },
+  {
+    "nome": "FRANCISCO LIMA NETO",
+    "status": "Aislan - 163 C",
+    "unidade": "34 BL C"
+  },
+  {
+    "nome": "FRANCISCO LIMA NETO",
+    "status": "Eduardo - 241 H",
+    "unidade": "34 BL C"
+  },
+  {
+    "nome": "FRANCISCO LIMA NETO",
+    "status": "Viviane - 13 G",
+    "unidade": "34 BL C"
+  },
+  {
+    "nome": "DIEGO HERNANDEZ ARJONI",
+    "status": "Eduardo - 241 H",
+    "unidade": "62 BL C"
+  },
+  {
+    "nome": "DIEGO HERNANDEZ ARJONI",
+    "status": "Wanderli - 153 B",
+    "unidade": "62 BL C"
+  },
+  {
+    "nome": "DIEGO HERNANDEZ ARJONI",
+    "status": "Sergio - 264 E",
+    "unidade": "62 BL C"
+  },
+  {
+    "nome": "FERNANDA MALAGUTTI TOME",
+    "status": "Aislan - 163 C",
+    "unidade": "63 BL C"
+  },
+  {
+    "nome": "FERNANDA MALAGUTTI TOME",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "63 BL C"
+  },
+  {
+    "nome": "FERNANDA MALAGUTTI TOME",
+    "status": "Sergio - 264 E",
+    "unidade": "63 BL C"
+  },
+  {
+    "nome": "CAROLINA DOS SANTOS PACHECO CONCEIÇÃO/FLAVIO DA CONCEIÇÃO",
+    "status": "Eduardo - 241 H",
+    "unidade": "64 BL C"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Eduardo - 241 H",
+    "unidade": "74 BL C"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Aislan - 163 C",
+    "unidade": "74 BL C"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Sergio - 264 E",
+    "unidade": "74 BL C"
+  },
+  {
+    "nome": "LUCAS FABRIN MANZOLI / ANA CAROLINA BELLINI",
+    "status": "Viviane - 13 G",
+    "unidade": "81 BL C"
+  },
+  {
+    "nome": "LUCAS FABRIN MANZOLI / ANA CAROLINA BELLINI",
+    "status": "Eduardo - 241 H",
+    "unidade": "81 BL C"
+  },
+  {
+    "nome": "LUCAS FABRIN MANZOLI / ANA CAROLINA BELLINI",
+    "status": "Aislan - 163 C",
+    "unidade": "81 BL C"
+  },
+  {
+    "nome": "TATIANA CAMILA DE SOUZA",
+    "status": "Aislan - 163 C",
+    "unidade": "103 BL C"
+  },
+  {
+    "nome": "TATIANA CAMILA DE SOUZA",
+    "status": "Eduardo - 241 H",
+    "unidade": "103 BL C"
+  },
+  {
+    "nome": "TATIANA CAMILA DE SOUZA",
+    "status": "Sergio - 264 E",
+    "unidade": "103 BL C"
+  },
+  {
+    "nome": "MARCELO AFONSO DE FARIA RODRIGUES",
+    "status": "Aislan - 163 C",
+    "unidade": "112 BL C"
+  },
+  {
+    "nome": "MARCELO AFONSO DE FARIA RODRIGUES",
+    "status": "Eduardo - 241 H",
+    "unidade": "112 BL C"
+  },
+  {
+    "nome": "MARCELO AFONSO DE FARIA RODRIGUES",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "112 BL C"
+  },
+  {
+    "nome": "JOAQUIM DA SILVEIRA COELHO NETO",
+    "status": "Aislan - 163 C",
+    "unidade": "123 BL C"
+  },
+  {
+    "nome": "JOAQUIM DA SILVEIRA COELHO NETO",
+    "status": "Wanderli - 153 B",
+    "unidade": "123 BL C"
+  },
+  {
+    "nome": "JOAQUIM DA SILVEIRA COELHO NETO",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "123 BL C"
+  },
+  {
+    "nome": "AISLAN ROBERTO VIANA BUENO",
+    "status": "Aislan - 163 C",
+    "unidade": "163 BL C"
+  },
+  {
+    "nome": "AISLAN ROBERTO VIANA BUENO",
+    "status": "Viviane - 13 G",
+    "unidade": "163 BL C"
+  },
+  {
+    "nome": "AISLAN ROBERTO VIANA BUENO",
+    "status": "Eduardo - 241 H",
+    "unidade": "163 BL C"
+  },
+  {
+    "nome": "JILSON AILTON RIBEIRO",
+    "status": "Eduardo - 241 H",
+    "unidade": "234 BL C"
+  },
+  {
+    "nome": "JILSON AILTON RIBEIRO",
+    "status": "Viviane - 13 G",
+    "unidade": "234 BL C"
+  },
+  {
+    "nome": "JILSON AILTON RIBEIRO",
+    "status": "Aislan - 163 C",
+    "unidade": "234 BL C"
+  },
+  {
+    "nome": "ANA LUCIA DE SOUZA SANTINI",
+    "status": "Eduardo - 241 H",
+    "unidade": "272 BL C"
+  },
+  {
+    "nome": "ANA LUCIA DE SOUZA SANTINI",
+    "status": "Wanderli - 153 B",
+    "unidade": "272 BL C"
+  },
+  {
+    "nome": "ANA LUCIA DE SOUZA SANTINI",
+    "status": "Viviane - 13 G",
+    "unidade": "272 BL C"
+  },
+  {
+    "nome": "THIAGO SANTOS COSTA",
+    "status": "Eduardo - 241 H",
+    "unidade": "22 BL D"
+  },
+  {
+    "nome": "THIAGO SANTOS COSTA",
+    "status": "Wanderli - 153 B",
+    "unidade": "22 BL D"
+  },
+  {
+    "nome": "THIAGO SANTOS COSTA",
+    "status": "Aislan - 163 C",
+    "unidade": "22 BL D"
+  },
+  {
+    "nome": "CAROLINA BOTTINI PRATES",
+    "status": "Viviane - 13 G",
+    "unidade": "23 BL D"
+  },
+  {
+    "nome": "CAROLINA BOTTINI PRATES",
+    "status": "Aislan - 163 C",
+    "unidade": "23 BL D"
+  },
+  {
+    "nome": "CAROLINA BOTTINI PRATES",
+    "status": "Sergio - 264 E",
+    "unidade": "23 BL D"
+  },
+  {
+    "nome": "HEITOR ANGELO MORAES JUNIOR",
+    "status": "Sergio - 264 E",
+    "unidade": "53 BL D"
+  },
+  {
+    "nome": "HEITOR ANGELO MORAES JUNIOR",
+    "status": "Viviane - 13 G",
+    "unidade": "53 BL D"
+  },
+  {
+    "nome": "HEITOR ANGELO MORAES JUNIOR",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "53 BL D"
+  },
+  {
+    "nome": "ADRIANO LUIZ PAVAN DA SILVA / DANIELLE DE FATIMA NEVES PAVAN",
+    "status": "Aislan - 163 C",
+    "unidade": "91 BL D"
+  },
+  {
+    "nome": "ADRIANO LUIZ PAVAN DA SILVA / DANIELLE DE FATIMA NEVES PAVAN",
+    "status": "Viviane - 13 G",
+    "unidade": "91 BL D"
+  },
+  {
+    "nome": "ADRIANO LUIZ PAVAN DA SILVA / DANIELLE DE FATIMA NEVES PAVAN",
+    "status": "Eduardo - 241 H",
+    "unidade": "91 BL D"
+  },
+  {
+    "nome": "POLLYANNA DE FREITAS CASTRO",
+    "status": "Aislan - 163 C",
+    "unidade": "104 BL D"
+  },
+  {
+    "nome": "POLLYANNA DE FREITAS CASTRO",
+    "status": "Sergio - 264 E",
+    "unidade": "104 BL D"
+  },
+  {
+    "nome": "POLLYANNA DE FREITAS CASTRO",
+    "status": "Wanderli - 153 B",
+    "unidade": "104 BL D"
+  },
+  {
+    "nome": "SERGIO FERNANDO DE CARVALHO",
+    "status": "Aislan - 163 C",
+    "unidade": "111 BL D"
+  },
+  {
+    "nome": "SERGIO FERNANDO DE CARVALHO",
+    "status": "Eduardo - 241 H",
+    "unidade": "111 BL D"
+  },
+  {
+    "nome": "SERGIO FERNANDO DE CARVALHO",
+    "status": "Wanderli - 153 B",
+    "unidade": "111 BL D"
+  },
+  {
+    "nome": "LUCIANA VALENTE FRAGA",
+    "status": "Aislan - 163 C",
+    "unidade": "112 BL D"
+  },
+  {
+    "nome": "LUCIANA VALENTE FRAGA",
+    "status": "Eduardo - 241 H",
+    "unidade": "112 BL D"
+  },
+  {
+    "nome": "LUCIANA VALENTE FRAGA",
+    "status": "Wanderli - 153 B",
+    "unidade": "112 BL D"
+  },
+  {
+    "nome": "ANDRE ANDRADE DE ALMEIDA / RAFAELE ALVES DE ALMEIDA",
+    "status": "Aislan - 163 C",
+    "unidade": "121 BL D"
+  },
+  {
+    "nome": "ANDRE ANDRADE DE ALMEIDA / RAFAELE ALVES DE ALMEIDA",
+    "status": "Eduardo - 241 H",
+    "unidade": "121 BL D"
+  },
+  {
+    "nome": "ANDRE ANDRADE DE ALMEIDA / RAFAELE ALVES DE ALMEIDA",
+    "status": "Wanderli - 153 B",
+    "unidade": "121 BL D"
+  },
+  {
+    "nome": "ANNE CAROLINE DE MEDEIROS TAKAHASHI",
+    "status": "Eduardo - 241 H",
+    "unidade": "123 BL D"
+  },
+  {
+    "nome": "ANNE CAROLINE DE MEDEIROS TAKAHASHI",
+    "status": "Viviane - 13 G",
+    "unidade": "123 BL D"
+  },
+  {
+    "nome": "ANNE CAROLINE DE MEDEIROS TAKAHASHI",
+    "status": "Aislan - 163 C",
+    "unidade": "123 BL D"
+  },
+  {
+    "nome": "ADRIANA ALVES FERNANDES",
+    "status": "Viviane - 13 G",
+    "unidade": "131 BL D"
+  },
+  {
+    "nome": "LETICIA HELENA GIOVANETTI SANTOS / RAFAEL DE BARROS SANTOS",
+    "status": "Viviane - 13 G",
+    "unidade": "142 BL D"
+  },
+  {
+    "nome": "LETICIA HELENA GIOVANETTI SANTOS / RAFAEL DE BARROS SANTOS",
+    "status": "Sergio - 264 E",
+    "unidade": "142 BL D"
+  },
+  {
+    "nome": "LETICIA HELENA GIOVANETTI SANTOS / RAFAEL DE BARROS SANTOS",
+    "status": "Eduardo - 241 H",
+    "unidade": "142 BL D"
+  },
+  {
+    "nome": "MATEUS JOSÉ DAMASCENO DE ANDRADE / ROSANA PAIVA MOTA",
+    "status": "Aislan - 163 C",
+    "unidade": "153 BL D"
+  },
+  {
+    "nome": "MATEUS JOSÉ DAMASCENO DE ANDRADE / ROSANA PAIVA MOTA",
+    "status": "Eduardo - 241 H",
+    "unidade": "153 BL D"
+  },
+  {
+    "nome": "MATEUS JOSÉ DAMASCENO DE ANDRADE / ROSANA PAIVA MOTA",
+    "status": "Viviane - 13 G",
+    "unidade": "153 BL D"
+  },
+  {
+    "nome": "VILMA DE FRANÇA NICOLAU / JÚLIO CÉSAR NICOLAU",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "161 BL D"
+  },
+  {
+    "nome": "VILMA DE FRANÇA NICOLAU / JÚLIO CÉSAR NICOLAU",
+    "status": "Eduardo - 241 H",
+    "unidade": "161 BL D"
+  },
+  {
+    "nome": "VILMA DE FRANÇA NICOLAU / JÚLIO CÉSAR NICOLAU",
+    "status": "Sergio - 264 E",
+    "unidade": "161 BL D"
+  },
+  {
+    "nome": "HAMILTON SANTOS MIRANDA",
+    "status": "Eduardo - 241 H",
+    "unidade": "162 BL D"
+  },
+  {
+    "nome": "HAMILTON SANTOS MIRANDA",
+    "status": "Aislan - 163 C",
+    "unidade": "162 BL D"
+  },
+  {
+    "nome": "HAMILTON SANTOS MIRANDA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "162 BL D"
+  },
+  {
+    "nome": "ARTHUR M. VILELLA / MARCIA D. S. VILELLA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "184 BL D"
+  },
+  {
+    "nome": "ARTHUR M. VILELLA / MARCIA D. S. VILELLA",
+    "status": "Wanderli - 153 B",
+    "unidade": "184 BL D"
+  },
+  {
+    "nome": "ARTHUR M. VILELLA / MARCIA D. S. VILELLA",
+    "status": "Viviane - 13 G",
+    "unidade": "184 BL D"
+  },
+  {
+    "nome": "IGOR EMIDIO DE PAULA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "191 BL D"
+  },
+  {
+    "nome": "IGOR EMIDIO DE PAULA",
+    "status": "Viviane - 13 G",
+    "unidade": "191 BL D"
+  },
+  {
+    "nome": "IGOR EMIDIO DE PAULA",
+    "status": "Sergio - 264 E",
+    "unidade": "191 BL D"
+  },
+  {
+    "nome": "CRISTINA MENDES VILELLA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "203 BL D"
+  },
+  {
+    "nome": "CRISTINA MENDES VILELLA",
+    "status": "Wanderli - 153 B",
+    "unidade": "203 BL D"
+  },
+  {
+    "nome": "CRISTINA MENDES VILELLA",
+    "status": "Viviane - 13 G",
+    "unidade": "203 BL D"
+  },
+  {
+    "nome": "MARCELINO APARECIDO DEMETRIO",
+    "status": "Eduardo - 241 H",
+    "unidade": "204 BL D"
+  },
+  {
+    "nome": "MARCELINO APARECIDO DEMETRIO",
+    "status": "Aislan - 163 C",
+    "unidade": "204 BL D"
+  },
+  {
+    "nome": "MARCELINO APARECIDO DEMETRIO",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "204 BL D"
+  },
+  {
+    "nome": "EUGENIO CALIL PEDRO / ELAINE SPINDOLA ROSA",
+    "status": "Eduardo - 241 H",
+    "unidade": "211 BL D"
+  },
+  {
+    "nome": "EUGENIO CALIL PEDRO / ELAINE SPINDOLA ROSA",
+    "status": "Viviane - 13 G",
+    "unidade": "211 BL D"
+  },
+  {
+    "nome": "EUGENIO CALIL PEDRO / ELAINE SPINDOLA ROSA",
+    "status": "Sergio - 264 E",
+    "unidade": "211 BL D"
+  },
+  {
+    "nome": "VALDIRENE DOS SANTOS",
+    "status": "Viviane - 13 G",
+    "unidade": "242 BL D"
+  },
+  {
+    "nome": "VALDIRENE DOS SANTOS",
+    "status": "Wanderli - 153 B",
+    "unidade": "242 BL D"
+  },
+  {
+    "nome": "VALDIRENE DOS SANTOS",
+    "status": "Sergio - 264 E",
+    "unidade": "242 BL D"
+  },
+  {
+    "nome": "GREICY MARA MENGUE FENIMAN",
+    "status": "Viviane - 13 G",
+    "unidade": "11 BL E"
+  },
+  {
+    "nome": "GREICY MARA MENGUE FENIMAN",
+    "status": "Eduardo - 241 H",
+    "unidade": "11 BL E"
+  },
+  {
+    "nome": "GREICY MARA MENGUE FENIMAN",
+    "status": "Sergio - 264 E",
+    "unidade": "11 BL E"
+  },
+  {
+    "nome": "PAULO EDUARDO CORSINI",
+    "status": "Eduardo - 241 H",
+    "unidade": "34 BL E"
+  },
+  {
+    "nome": "PAULO EDUARDO CORSINI",
+    "status": "Sergio - 264 E",
+    "unidade": "34 BL E"
+  },
+  {
+    "nome": "PAULO EDUARDO CORSINI",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "34 BL E"
+  },
+  {
+    "nome": "JULIO CESAR MORGADO VITTORATO",
+    "status": "Eduardo - 241 H",
+    "unidade": "41 BL E"
+  },
+  {
+    "nome": "JULIO CESAR MORGADO VITTORATO",
+    "status": "Aislan - 163 C",
+    "unidade": "41 BL E"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Eduardo - 241 H",
+    "unidade": "104 BL E"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Aislan - 163 C",
+    "unidade": "104 BL E"
+  },
+  {
+    "nome": "GIULIANA MONTINI BINOTO",
+    "status": "Sergio - 264 E",
+    "unidade": "104 BL E"
+  },
+  {
+    "nome": "MANOEL ALONSO GAN / ANA CRISTINA PEDROSO ALONSO",
+    "status": "Viviane - 13 G",
+    "unidade": "113 BL E"
+  },
+  {
+    "nome": "MANOEL ALONSO GAN / ANA CRISTINA PEDROSO ALONSO",
+    "status": "Eduardo - 241 H",
+    "unidade": "113 BL E"
+  },
+  {
+    "nome": "MANOEL ALONSO GAN / ANA CRISTINA PEDROSO ALONSO",
+    "status": "Sergio - 264 E",
+    "unidade": "113 BL E"
+  },
+  {
+    "nome": "LUIZ GUSTAVO DE CARVALHO QUERUBINO",
+    "status": "Eduardo - 241 H",
+    "unidade": "131 BL E"
+  },
+  {
+    "nome": "LUIZ GUSTAVO DE CARVALHO QUERUBINO",
+    "status": "Viviane - 13 G",
+    "unidade": "131 BL E"
+  },
+  {
+    "nome": "FELIPPE GALIANE GARMBIS",
+    "status": "Eduardo - 241 H",
+    "unidade": "133 BL E"
+  },
+  {
+    "nome": "FELIPPE GALIANE GARMBIS",
+    "status": "Aislan - 163 C",
+    "unidade": "133 BL E"
+  },
+  {
+    "nome": "FELIPPE GALIANE GARMBIS",
+    "status": "Viviane - 13 G",
+    "unidade": "133 BL E"
+  },
+  {
+    "nome": "JOAO MARCELO NUNES DE PAULA",
+    "status": "Sergio - 264 E",
+    "unidade": "152 BL E"
+  },
+  {
+    "nome": "JOAO MARCELO NUNES DE PAULA",
+    "status": "Viviane - 13 G",
+    "unidade": "152 BL E"
+  },
+  {
+    "nome": "JOAO MARCELO NUNES DE PAULA",
+    "status": "Eduardo - 241 H",
+    "unidade": "152 BL E"
+  },
+  {
+    "nome": "MARCELO HENRIQUE ESSADO DE MORAIS",
+    "status": "Aislan - 163 C",
+    "unidade": "153 BL E"
+  },
+  {
+    "nome": "MARCELO HENRIQUE ESSADO DE MORAIS",
+    "status": "Wanderli - 153 B",
+    "unidade": "153 BL E"
+  },
+  {
+    "nome": "MARCELO HENRIQUE ESSADO DE MORAIS",
+    "status": "Sergio - 264 E",
+    "unidade": "153 BL E"
+  },
+  {
+    "nome": "HUMBERTO DURANS KINJO/CLARICE LEÃO LOPES",
+    "status": "Aislan - 163 C",
+    "unidade": "154 BL E"
+  },
+  {
+    "nome": "HUMBERTO DURANS KINJO/CLARICE LEÃO LOPES",
+    "status": "Eduardo - 241 H",
+    "unidade": "154 BL E"
+  },
+  {
+    "nome": "HUMBERTO DURANS KINJO/CLARICE LEÃO LOPES",
+    "status": "Sergio - 264 E",
+    "unidade": "154 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA",
+    "status": "Aislan - 163 C",
+    "unidade": "172 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA",
+    "status": "Eduardo - 241 H",
+    "unidade": "172 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA",
+    "status": "Sergio - 264 E",
+    "unidade": "172 BL E"
+  },
+  {
+    "nome": "DEMETRIUS DE OLIVEIRA E SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "181 BL E"
+  },
+  {
+    "nome": "DEMETRIUS DE OLIVEIRA E SILVA",
+    "status": "Aislan - 163 C",
+    "unidade": "181 BL E"
+  },
+  {
+    "nome": "DEMETRIUS DE OLIVEIRA E SILVA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "181 BL E"
+  },
+  {
+    "nome": "FABIANO NASCIMENTO DA SILVA",
+    "status": "Aislan - 163 C",
+    "unidade": "202 BL E"
+  },
+  {
+    "nome": "FABIANO NASCIMENTO DA SILVA",
+    "status": "Wanderli - 153 B",
+    "unidade": "202 BL E"
+  },
+  {
+    "nome": "FABIANO NASCIMENTO DA SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "202 BL E"
+  },
+  {
+    "nome": "GABRIEL TORRES DE JESUS",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "203 BL E"
+  },
+  {
+    "nome": "GABRIEL TORRES DE JESUS",
+    "status": "Wanderli - 153 B",
+    "unidade": "203 BL E"
+  },
+  {
+    "nome": "GABRIEL TORRES DE JESUS",
+    "status": "Eduardo - 241 H",
+    "unidade": "203 BL E"
+  },
+  {
+    "nome": "CRISTIAN MENDES DE LIMA / PATRICIA FEITOSA BEZERRA DE LIMA",
+    "status": "Sergio - 264 E",
+    "unidade": "211 BL E"
+  },
+  {
+    "nome": "CRISTIAN MENDES DE LIMA / PATRICIA FEITOSA BEZERRA DE LIMA",
+    "status": "Wanderli - 153 B",
+    "unidade": "211 BL E"
+  },
+  {
+    "nome": "CRISTIAN MENDES DE LIMA / PATRICIA FEITOSA BEZERRA DE LIMA",
+    "status": "Eduardo - 241 H",
+    "unidade": "211 BL E"
+  },
+  {
+    "nome": "JALNA SIQUEIRA KISO",
+    "status": "Eduardo - 241 H",
+    "unidade": "213 BL E"
+  },
+  {
+    "nome": "JALNA SIQUEIRA KISO",
+    "status": "Aislan - 163 C",
+    "unidade": "213 BL E"
+  },
+  {
+    "nome": "JALNA SIQUEIRA KISO",
+    "status": "Wanderli - 153 B",
+    "unidade": "213 BL E"
+  },
+  {
+    "nome": "DIEGO DE AGUIAR RIGUETE",
+    "status": "Wanderli - 153 B",
+    "unidade": "244 BL E"
+  },
+  {
+    "nome": "DIEGO DE AGUIAR RIGUETE",
+    "status": "Sergio - 264 E",
+    "unidade": "244 BL E"
+  },
+  {
+    "nome": "DIEGO DE AGUIAR RIGUETE",
+    "status": "Aislan - 163 C",
+    "unidade": "244 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA (MONICA LAUER)",
+    "status": "Aislan - 163 C",
+    "unidade": "251 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA (MONICA LAUER)",
+    "status": "Eduardo - 241 H",
+    "unidade": "251 BL E"
+  },
+  {
+    "nome": "BIGA EMPREENDIMENTOS IMOBILIÁRIOS LTDA (MONICA LAUER)",
+    "status": "Sergio - 264 E",
+    "unidade": "251 BL E"
+  },
+  {
+    "nome": "BRUNO SCHULTZ",
+    "status": "Aislan - 163 C",
+    "unidade": "252 BL E"
+  },
+  {
+    "nome": "BRUNO SCHULTZ",
+    "status": "Sergio - 264 E",
+    "unidade": "252 BL E"
+  },
+  {
+    "nome": "SERGIO PEREIRA DE ALCANTARA / JULIANA COSTA ROUSSELET",
+    "status": "Sergio - 264 E",
+    "unidade": "264 BL E"
+  },
+  {
+    "nome": "SERGIO PEREIRA DE ALCANTARA / JULIANA COSTA ROUSSELET",
+    "status": "Aislan - 163 C",
+    "unidade": "264 BL E"
+  },
+  {
+    "nome": "SERGIO PEREIRA DE ALCANTARA / JULIANA COSTA ROUSSELET",
+    "status": "Viviane - 13 G",
+    "unidade": "264 BL E"
+  },
+  {
+    "nome": "HELOISA MUNIZ GARCIA BONJARDIM",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "22 BL F"
+  },
+  {
+    "nome": "HELOISA MUNIZ GARCIA BONJARDIM",
+    "status": "Viviane - 13 G",
+    "unidade": "22 BL F"
+  },
+  {
+    "nome": "HELOISA MUNIZ GARCIA BONJARDIM",
+    "status": "Sergio - 264 E",
+    "unidade": "22 BL F"
+  },
+  {
+    "nome": "ALBERTO LUIS DA ROCHA FONSECA / VIVIANE DE SOUZA SEIXAS FONS",
+    "status": "Viviane - 13 G",
+    "unidade": "24 BL F"
+  },
+  {
+    "nome": "HEVERTON LOPES DA OLIVEIRA",
+    "status": "Aislan - 163 C",
+    "unidade": "31 BL F"
+  },
+  {
+    "nome": "HEVERTON LOPES DA OLIVEIRA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "31 BL F"
+  },
+  {
+    "nome": "HEVERTON LOPES DA OLIVEIRA",
+    "status": "Viviane - 13 G",
+    "unidade": "31 BL F"
+  },
+  {
+    "nome": "HAROLDO JOSÉ DUPAS MASTRODOMENICO / ANA MARIA DE FÁTIMA CONTE",
+    "status": "Aislan - 163 C",
+    "unidade": "32 BL F"
+  },
+  {
+    "nome": "HAROLDO JOSÉ DUPAS MASTRODOMENICO / ANA MARIA DE FÁTIMA CONTE",
+    "status": "Eduardo - 241 H",
+    "unidade": "32 BL F"
+  },
+  {
+    "nome": "HAROLDO JOSÉ DUPAS MASTRODOMENICO / ANA MARIA DE FÁTIMA CONTE",
+    "status": "Viviane - 13 G",
+    "unidade": "32 BL F"
+  },
+  {
+    "nome": "CHARLES DOS SANTOS BARBOSA",
+    "status": "Aislan - 163 C",
+    "unidade": "33 BL F"
+  },
+  {
+    "nome": "CHARLES DOS SANTOS BARBOSA",
+    "status": "Sergio - 264 E",
+    "unidade": "33 BL F"
+  },
+  {
+    "nome": "CHARLES DOS SANTOS BARBOSA",
+    "status": "Eduardo - 241 H",
+    "unidade": "33 BL F"
+  },
+  {
+    "nome": "FELIPE HENRIQUE DE OLIVEIRA",
+    "status": "Aislan - 163 C",
+    "unidade": "34 BL F"
+  },
+  {
+    "nome": "FELIPE HENRIQUE DE OLIVEIRA",
+    "status": "Eduardo - 241 H",
+    "unidade": "34 BL F"
+  },
+  {
+    "nome": "FELIPE HENRIQUE DE OLIVEIRA",
+    "status": "Sergio - 264 E",
+    "unidade": "34 BL F"
+  },
+  {
+    "nome": "FABIANO MICHELMAN DE SOUSA",
+    "status": "Aislan - 163 C",
+    "unidade": "43 BL F"
+  },
+  {
+    "nome": "FABIANO MICHELMAN DE SOUSA",
+    "status": "Eduardo - 241 H",
+    "unidade": "43 BL F"
+  },
+  {
+    "nome": "FABIANO MICHELMAN DE SOUSA",
+    "status": "Sergio - 264 E",
+    "unidade": "43 BL F"
+  },
+  {
+    "nome": "EDISON ARMANDO TAVANO/ADRIANA CAMPOS TAVANO",
+    "status": "Viviane - 13 G",
+    "unidade": "63 BL F"
+  },
+  {
+    "nome": "EDISON ARMANDO TAVANO/ADRIANA CAMPOS TAVANO",
+    "status": "Aislan - 163 C",
+    "unidade": "63 BL F"
+  },
+  {
+    "nome": "EDISON ARMANDO TAVANO/ADRIANA CAMPOS TAVANO",
+    "status": "Sergio - 264 E",
+    "unidade": "63 BL F"
+  },
+  {
+    "nome": "GUILHERME SOARES E SILVA",
+    "status": "Aislan - 163 C",
+    "unidade": "64 BL F"
+  },
+  {
+    "nome": "GUILHERME SOARES E SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "64 BL F"
+  },
+  {
+    "nome": "ALEX SANDRO SILVESTRE MARTINS",
+    "status": "Aislan - 163 C",
+    "unidade": "71 BL F"
+  },
+  {
+    "nome": "ALEX SANDRO SILVESTRE MARTINS",
+    "status": "Wanderli - 153 B",
+    "unidade": "71 BL F"
+  },
+  {
+    "nome": "ALEX SANDRO SILVESTRE MARTINS",
+    "status": "Viviane - 13 G",
+    "unidade": "71 BL F"
+  },
+  {
+    "nome": "STELLA MOREIRA LIMA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "72 BL F"
+  },
+  {
+    "nome": "STELLA MOREIRA LIMA",
+    "status": "Aislan - 163 C",
+    "unidade": "72 BL F"
+  },
+  {
+    "nome": "STELLA MOREIRA LIMA",
+    "status": "Wanderli - 153 B",
+    "unidade": "72 BL F"
+  },
+  {
+    "nome": "HELOISA HELENA FERREIRA CORREIA",
+    "status": "Aislan - 163 C",
+    "unidade": "73 BL F"
+  },
+  {
+    "nome": "HELOISA HELENA FERREIRA CORREIA",
+    "status": "Eduardo - 241 H",
+    "unidade": "73 BL F"
+  },
+  {
+    "nome": "HELOISA HELENA FERREIRA CORREIA",
+    "status": "Viviane - 13 G",
+    "unidade": "73 BL F"
+  },
+  {
+    "nome": "REDIRVAL BEGOTTI",
+    "status": "Wanderli - 153 B",
+    "unidade": "81 BL F"
+  },
+  {
+    "nome": "REDIRVAL BEGOTTI",
+    "status": "Eduardo - 241 H",
+    "unidade": "81 BL F"
+  },
+  {
+    "nome": "REDIRVAL BEGOTTI",
+    "status": "Aislan - 163 C",
+    "unidade": "81 BL F"
+  },
+  {
+    "nome": "ANA THAIS RAMALHEIRO MATSURA",
+    "status": "Aislan - 163 C",
+    "unidade": "93 BL F"
+  },
+  {
+    "nome": "ANA THAIS RAMALHEIRO MATSURA",
+    "status": "Eduardo - 241 H",
+    "unidade": "93 BL F"
+  },
+  {
+    "nome": "ANA THAIS RAMALHEIRO MATSURA",
+    "status": "Viviane - 13 G",
+    "unidade": "93 BL F"
+  },
+  {
+    "nome": "PAULO HENRIQUE DA SILVA",
+    "status": "Aislan - 163 C",
+    "unidade": "103 BL F"
+  },
+  {
+    "nome": "PAULO HENRIQUE DA SILVA",
+    "status": "Viviane - 13 G",
+    "unidade": "103 BL F"
+  },
+  {
+    "nome": "MICHELLE RIGAMONTI BOSCARIOL",
+    "status": "Sergio - 264 E",
+    "unidade": "104 BL F"
+  },
+  {
+    "nome": "MICHELLE RIGAMONTI BOSCARIOL",
+    "status": "Wanderli - 153 B",
+    "unidade": "104 BL F"
+  },
+  {
+    "nome": "DANILO RODRIGUES DE SOUZA DIAS",
+    "status": "Aislan - 163 C",
+    "unidade": "121 BL F"
+  },
+  {
+    "nome": "DANILO RODRIGUES DE SOUZA DIAS",
+    "status": "Eduardo - 241 H",
+    "unidade": "121 BL F"
+  },
+  {
+    "nome": "DANILO RODRIGUES DE SOUZA DIAS",
+    "status": "Viviane - 13 G",
+    "unidade": "121 BL F"
+  },
+  {
+    "nome": "ROBERTO DELLAPE JUNIOR",
+    "status": "Aislan - 163 C",
+    "unidade": "122 BL F"
+  },
+  {
+    "nome": "ROBERTO DELLAPE JUNIOR",
+    "status": "Sergio - 264 E",
+    "unidade": "122 BL F"
+  },
+  {
+    "nome": "RODOLFO GOSS FLORINDO",
+    "status": "Aislan - 163 C",
+    "unidade": "133 BL F"
+  },
+  {
+    "nome": "RODOLFO GOSS FLORINDO",
+    "status": "Viviane - 13 G",
+    "unidade": "133 BL F"
+  },
+  {
+    "nome": "RODOLFO GOSS FLORINDO",
+    "status": "Sergio - 264 E",
+    "unidade": "133 BL F"
+  },
+  {
+    "nome": "MILTON CARLOS FONSECA FRANÇA",
+    "status": "Viviane - 13 G",
+    "unidade": "143 BL F"
+  },
+  {
+    "nome": "MILTON CARLOS FONSECA FRANÇA",
+    "status": "Eduardo - 241 H",
+    "unidade": "143 BL F"
+  },
+  {
+    "nome": "MILTON CARLOS FONSECA FRANÇA",
+    "status": "Wanderli - 153 B",
+    "unidade": "143 BL F"
+  },
+  {
+    "nome": "MARCELO ROBERTO PEREIRA",
+    "status": "Aislan - 163 C",
+    "unidade": "164 BL F"
+  },
+  {
+    "nome": "MARCELO ROBERTO PEREIRA",
+    "status": "Viviane - 13 G",
+    "unidade": "164 BL F"
+  },
+  {
+    "nome": "MARCELO ROBERTO PEREIRA",
+    "status": "Eduardo - 241 H",
+    "unidade": "164 BL F"
+  },
+  {
+    "nome": "CLAYTON RANGEL PINTO",
+    "status": "Aislan - 163 C",
+    "unidade": "174 BL F"
+  },
+  {
+    "nome": "CLAYTON RANGEL PINTO",
+    "status": "Viviane - 13 G",
+    "unidade": "174 BL F"
+  },
+  {
+    "nome": "CLAYTON RANGEL PINTO",
+    "status": "Eduardo - 241 H",
+    "unidade": "174 BL F"
+  },
+  {
+    "nome": "QUESSIANE MARTINS GARAVELLO/RODRIGO LUIZ DOS SANTOS GARAVELL",
+    "status": "Aislan - 163 C",
+    "unidade": "181 BL F"
+  },
+  {
+    "nome": "RENATO ANZOLI BEGOTTI",
+    "status": "Aislan - 163 C",
+    "unidade": "191 BL F"
+  },
+  {
+    "nome": "RENATO ANZOLI BEGOTTI",
+    "status": "Eduardo - 241 H",
+    "unidade": "191 BL F"
+  },
+  {
+    "nome": "RENATO ANZOLI BEGOTTI",
+    "status": "Wanderli - 153 B",
+    "unidade": "191 BL F"
+  },
+  {
+    "nome": "ANTONIO MARCOS LOPES DANTAS",
+    "status": "Eduardo - 241 H",
+    "unidade": "203 BL F"
+  },
+  {
+    "nome": "ANTONIO MARCOS LOPES DANTAS",
+    "status": "Viviane - 13 G",
+    "unidade": "203 BL F"
+  },
+  {
+    "nome": "ANTONIO MARCOS LOPES DANTAS",
+    "status": "Aislan - 163 C",
+    "unidade": "203 BL F"
+  },
+  {
+    "nome": "CLEBER RODRIGUES DA FONSECA",
+    "status": "Viviane - 13 G",
+    "unidade": "213 BL F"
+  },
+  {
+    "nome": "CLEBER RODRIGUES DA FONSECA",
+    "status": "Aislan - 163 C",
+    "unidade": "213 BL F"
+  },
+  {
+    "nome": "CLEBER RODRIGUES DA FONSECA",
+    "status": "Wanderli - 153 B",
+    "unidade": "213 BL F"
+  },
+  {
+    "nome": "AGUINALDO PEREIRA DA SILVA",
+    "status": "Viviane - 13 G",
+    "unidade": "221 BL F"
+  },
+  {
+    "nome": "AGUINALDO PEREIRA DA SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "221 BL F"
+  },
+  {
+    "nome": "ROSA MILENA MARSOLA / LUIS HENRIQUE BRIZZANTE",
+    "status": "Aislan - 163 C",
+    "unidade": "222 BL F"
+  },
+  {
+    "nome": "ROSA MILENA MARSOLA / LUIS HENRIQUE BRIZZANTE",
+    "status": "Eduardo - 241 H",
+    "unidade": "222 BL F"
+  },
+  {
+    "nome": "ROSA MILENA MARSOLA / LUIS HENRIQUE BRIZZANTE",
+    "status": "Viviane - 13 G",
+    "unidade": "222 BL F"
+  },
+  {
+    "nome": "DANIEL CEGALINI",
+    "status": "Aislan - 163 C",
+    "unidade": "223 BL F"
+  },
+  {
+    "nome": "DANIEL CEGALINI",
+    "status": "Viviane - 13 G",
+    "unidade": "223 BL F"
+  },
+  {
+    "nome": "GERSON FONSECA DE AGUIAR",
+    "status": "Wanderli - 153 B",
+    "unidade": "233 BL F"
+  },
+  {
+    "nome": "JÚLIO CÉSAR BOTAN DIAS / CLAUDIA MENDES GUERRA DIAS",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "241 BL F"
+  },
+  {
+    "nome": "JÚLIO CÉSAR BOTAN DIAS / CLAUDIA MENDES GUERRA DIAS",
+    "status": "Viviane - 13 G",
+    "unidade": "241 BL F"
+  },
+  {
+    "nome": "JÚLIO CÉSAR BOTAN DIAS / CLAUDIA MENDES GUERRA DIAS",
+    "status": "Eduardo - 241 H",
+    "unidade": "241 BL F"
+  },
+  {
+    "nome": "RODRIGO UBIRATA GUNTHER LUX",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "254 BL F"
+  },
+  {
+    "nome": "RODRIGO UBIRATA GUNTHER LUX",
+    "status": "Eduardo - 241 H",
+    "unidade": "254 BL F"
+  },
+  {
+    "nome": "FERNANDO RIBEIRO",
+    "status": "Viviane - 13 G",
+    "unidade": "264 BL F"
+  },
+  {
+    "nome": "ANDERSON SANTOS MARTINS",
+    "status": "Viviane - 13 G",
+    "unidade": "273 BL F"
+  },
+  {
+    "nome": "IVAN DOVAL MALDONADO",
+    "status": "Sergio - 264 E",
+    "unidade": "281 BL F"
+  },
+  {
+    "nome": "IVAN DOVAL MALDONADO",
+    "status": "Viviane - 13 G",
+    "unidade": "281 BL F"
+  },
+  {
+    "nome": "IVAN DOVAL MALDONADO",
+    "status": "Aislan - 163 C",
+    "unidade": "281 BL F"
+  },
+  {
+    "nome": "DOUGLAS CRISTIANO BARBOSA LOPES",
+    "status": "Aislan - 163 C",
+    "unidade": "284 BL F"
+  },
+  {
+    "nome": "DOUGLAS CRISTIANO BARBOSA LOPES",
+    "status": "Viviane - 13 G",
+    "unidade": "284 BL F"
+  },
+  {
+    "nome": "DOUGLAS CRISTIANO BARBOSA LOPES",
+    "status": "Sergio - 264 E",
+    "unidade": "284 BL F"
+  },
+  {
+    "nome": "ROSEMERI MELLO CARNEIRO BRAGA",
+    "status": "Wanderli - 153 B",
+    "unidade": "11 BL G"
+  },
+  {
+    "nome": "ROSEMERI MELLO CARNEIRO BRAGA",
+    "status": "Viviane - 13 G",
+    "unidade": "11 BL G"
+  },
+  {
+    "nome": "ROSEMERI MELLO CARNEIRO BRAGA",
+    "status": "Eduardo - 241 H",
+    "unidade": "11 BL G"
+  },
+  {
+    "nome": "VIVIANE APARECIDA DA ROSA FAGUNDES",
+    "status": "Viviane - 13 G",
+    "unidade": "13 BL G"
+  },
+  {
+    "nome": "VIVIANE APARECIDA DA ROSA FAGUNDES",
+    "status": "Eduardo - 241 H",
+    "unidade": "13 BL G"
+  },
+  {
+    "nome": "VIVIANE APARECIDA DA ROSA FAGUNDES",
+    "status": "Aislan - 163 C",
+    "unidade": "13 BL G"
+  },
+  {
+    "nome": "KLAUS JUERGEN JOHANSEN",
+    "status": "Viviane - 13 G",
+    "unidade": "33 BL G"
+  },
+  {
+    "nome": "KLAUS JUERGEN JOHANSEN",
+    "status": "Eduardo - 241 H",
+    "unidade": "33 BL G"
+  },
+  {
+    "nome": "KLAUS JUERGEN JOHANSEN",
+    "status": "Sergio - 264 E",
+    "unidade": "33 BL G"
+  },
+  {
+    "nome": "ACÁCIO LUIS TEIXEIRA",
+    "status": "Eduardo - 241 H",
+    "unidade": "41 BL G"
+  },
+  {
+    "nome": "ACÁCIO LUIS TEIXEIRA",
+    "status": "Viviane - 13 G",
+    "unidade": "41 BL G"
+  },
+  {
+    "nome": "ACÁCIO LUIS TEIXEIRA",
+    "status": "Sergio - 264 E",
+    "unidade": "41 BL G"
+  },
+  {
+    "nome": "LUIS EDUARDO COSTA LAURINO",
+    "status": "Viviane - 13 G",
+    "unidade": "113 BL G"
+  },
+  {
+    "nome": "LUIS EDUARDO COSTA LAURINO",
+    "status": "Sergio - 264 E",
+    "unidade": "113 BL G"
+  },
+  {
+    "nome": "LUIS EDUARDO COSTA LAURINO",
+    "status": "Eduardo - 241 H",
+    "unidade": "113 BL G"
+  },
+  {
+    "nome": "GABRIEL AUGUSTO RUIVO / MARIA ANDREIA DE OLIVEIRA RUIVO",
+    "status": "Wanderli - 153 B",
+    "unidade": "123 BL G"
+  },
+  {
+    "nome": "GABRIEL AUGUSTO RUIVO / MARIA ANDREIA DE OLIVEIRA RUIVO",
+    "status": "Sergio - 264 E",
+    "unidade": "123 BL G"
+  },
+  {
+    "nome": "GABRIEL AUGUSTO RUIVO / MARIA ANDREIA DE OLIVEIRA RUIVO",
+    "status": "Viviane - 13 G",
+    "unidade": "123 BL G"
+  },
+  {
+    "nome": "NAIRA CAROLINA ARAUJO SOUZA",
+    "status": "Aislan - 163 C",
+    "unidade": "142 BL G"
+  },
+  {
+    "nome": "NAIRA CAROLINA ARAUJO SOUZA",
+    "status": "Eduardo - 241 H",
+    "unidade": "142 BL G"
+  },
+  {
+    "nome": "NAIRA CAROLINA ARAUJO SOUZA",
+    "status": "Wanderli - 153 B",
+    "unidade": "142 BL G"
+  },
+  {
+    "nome": "RAFAEL SLAVOV",
+    "status": "Viviane - 13 G",
+    "unidade": "143 BL G"
+  },
+  {
+    "nome": "GILMAR DE CASTRO SILVA",
+    "status": "Eduardo - 241 H",
+    "unidade": "171 BL G"
+  },
+  {
+    "nome": "GILMAR DE CASTRO SILVA",
+    "status": "Viviane - 13 G",
+    "unidade": "171 BL G"
+  },
+  {
+    "nome": "HUGO STEFANIO DE ALMEIDA / FABIANA REIS MORAES DE ALMEIDA",
+    "status": "Aislan - 163 C",
+    "unidade": "203 BL G"
+  },
+  {
+    "nome": "HUGO STEFANIO DE ALMEIDA / FABIANA REIS MORAES DE ALMEIDA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "203 BL G"
+  },
+  {
+    "nome": "HUGO STEFANIO DE ALMEIDA / FABIANA REIS MORAES DE ALMEIDA",
+    "status": "Eduardo - 241 H",
+    "unidade": "203 BL G"
+  },
+  {
+    "nome": "EMANUEL JOSE PELOSO DE MORAIS / TASSIANE RAQUEL CUNHA MARTIN",
+    "status": "Eduardo - 241 H",
+    "unidade": "241 BL G"
+  },
+  {
+    "nome": "EMANUEL JOSE PELOSO DE MORAIS / TASSIANE RAQUEL CUNHA MARTIN",
+    "status": "Aislan - 163 C",
+    "unidade": "241 BL G"
+  },
+  {
+    "nome": "ALINE ABRANTES DE CARVALHO AVILA DA SILVA/EDUARDO AVILA DA S",
+    "status": "Viviane - 13 G",
+    "unidade": "243 BL G"
+  },
+  {
+    "nome": "ALINE ABRANTES DE CARVALHO AVILA DA SILVA/EDUARDO AVILA DA S",
+    "status": "Sergio - 264 E",
+    "unidade": "243 BL G"
+  },
+  {
+    "nome": "ALINE ABRANTES DE CARVALHO AVILA DA SILVA/EDUARDO AVILA DA S",
+    "status": "Eduardo - 241 H",
+    "unidade": "243 BL G"
+  },
+  {
+    "nome": "BRUNO AUGUSTO VIEIRA LOPES / FABIANE MORCIANE LOPES",
+    "status": "Eduardo - 241 H",
+    "unidade": "261 BL G"
+  },
+  {
+    "nome": "ARLINDO DE BARROS CAPELATO FERREIRA",
+    "status": "Viviane - 13 G",
+    "unidade": "262 BL G"
+  },
+  {
+    "nome": "SERGIO HITOSHI YAMASHIRO",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "263 BL G"
+  },
+  {
+    "nome": "SERGIO HITOSHI YAMASHIRO",
+    "status": "Eduardo - 241 H",
+    "unidade": "263 BL G"
+  },
+  {
+    "nome": "SERGIO HITOSHI YAMASHIRO",
+    "status": "Viviane - 13 G",
+    "unidade": "263 BL G"
+  },
+  {
+    "nome": "REGINA ANGELA PULICE",
+    "status": "Aislan - 163 C",
+    "unidade": "264 BL G"
+  },
+  {
+    "nome": "REGINA ANGELA PULICE",
+    "status": "Wanderli - 153 B",
+    "unidade": "264 BL G"
+  },
+  {
+    "nome": "REGINA ANGELA PULICE",
+    "status": "Eduardo - 241 H",
+    "unidade": "264 BL G"
+  },
+  {
+    "nome": "FELIPE BARBOSA MILEO",
+    "status": "Viviane - 13 G",
+    "unidade": "272 BL G"
+  },
+  {
+    "nome": "ANA PAULA RIBEIRO CARVALHO MIGUEL",
+    "status": "Aislan - 163 C",
+    "unidade": "274 BL G"
+  },
+  {
+    "nome": "ANA PAULA RIBEIRO CARVALHO MIGUEL",
+    "status": "Viviane - 13 G",
+    "unidade": "274 BL G"
+  },
+  {
+    "nome": "ANA PAULA RIBEIRO CARVALHO MIGUEL",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "274 BL G"
+  },
+  {
+    "nome": "GUILHERME SOUSA VILAÇA",
+    "status": "Wanderli - 153 B",
+    "unidade": "283 BL G"
+  },
+  {
+    "nome": "GUILHERME SOUSA VILAÇA",
+    "status": "Viviane - 13 G",
+    "unidade": "283 BL G"
+  },
+  {
+    "nome": "GUILHERME SOUSA VILAÇA",
+    "status": "Aislan - 163 C",
+    "unidade": "283 BL G"
+  },
+  {
+    "nome": "FELIPPE DA SILVA MELLO / CAMILA ARAUJO RUAS MELLO",
+    "status": "Eduardo - 241 H",
+    "unidade": "14 BL H"
+  },
+  {
+    "nome": "FELIPPE DA SILVA MELLO / CAMILA ARAUJO RUAS MELLO",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "14 BL H"
+  },
+  {
+    "nome": "FELIPPE DA SILVA MELLO / CAMILA ARAUJO RUAS MELLO",
+    "status": "Wanderli - 153 B",
+    "unidade": "14 BL H"
+  },
+  {
+    "nome": "TASSIO CORTES CAVALCANTE",
+    "status": "Eduardo - 241 H",
+    "unidade": "22 BL H"
+  },
+  {
+    "nome": "TASSIO CORTES CAVALCANTE",
+    "status": "Aislan - 163 C",
+    "unidade": "22 BL H"
+  },
+  {
+    "nome": "RUBENS DE ALEMIDA RODRIGUES / KENIA RODRIGUES BLAGHINI DAN",
+    "status": "Eduardo - 241 H",
+    "unidade": "23 BL H"
+  },
+  {
+    "nome": "RUBENS DE ALEMIDA RODRIGUES / KENIA RODRIGUES BLAGHINI DAN",
+    "status": "Viviane - 13 G",
+    "unidade": "23 BL H"
+  },
+  {
+    "nome": "THIAGO DA SILVA PINHEIRO DOS SANTOS / THALITA PINHEIRO GOMES",
+    "status": "Viviane - 13 G",
+    "unidade": "41 BL H"
+  },
+  {
+    "nome": "THIAGO DA SILVA PINHEIRO DOS SANTOS / THALITA PINHEIRO GOMES",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "41 BL H"
+  },
+  {
+    "nome": "THIAGO DA SILVA PINHEIRO DOS SANTOS / THALITA PINHEIRO GOMES",
+    "status": "Aislan - 163 C",
+    "unidade": "41 BL H"
+  },
+  {
+    "nome": "RENATO ALEX SANDRO SOUSA",
+    "status": "Eduardo - 241 H",
+    "unidade": "42 BL H"
+  },
+  {
+    "nome": "RENATO ALEX SANDRO SOUSA",
+    "status": "Viviane - 13 G",
+    "unidade": "42 BL H"
+  },
+  {
+    "nome": "RENATO ALEX SANDRO SOUSA",
+    "status": "Aislan - 163 C",
+    "unidade": "42 BL H"
+  },
+  {
+    "nome": "LEONARDO MELO DE LIMA / JULIANA CRISTINA DE HOLANDA DE LIMA",
+    "status": "Eduardo - 241 H",
+    "unidade": "62 BL H"
+  },
+  {
+    "nome": "LEONARDO MELO DE LIMA / JULIANA CRISTINA DE HOLANDA DE LIMA",
+    "status": "Viviane - 13 G",
+    "unidade": "62 BL H"
+  },
+  {
+    "nome": "LEONARDO BACELAR LIMA SANTOS",
+    "status": "Eduardo - 241 H",
+    "unidade": "74 BL H"
+  },
+  {
+    "nome": "LEONARDO BACELAR LIMA SANTOS",
+    "status": "Aislan - 163 C",
+    "unidade": "74 BL H"
+  },
+  {
+    "nome": "LEONARDO BACELAR LIMA SANTOS",
+    "status": "Viviane - 13 G",
+    "unidade": "74 BL H"
+  },
+  {
+    "nome": "GUERINO CASCAPERA NETO",
+    "status": "Eduardo - 241 H",
+    "unidade": "84 BL H"
+  },
+  {
+    "nome": "GUERINO CASCAPERA NETO",
+    "status": "Sergio - 264 E",
+    "unidade": "84 BL H"
+  },
+  {
+    "nome": "GUERINO CASCAPERA NETO",
+    "status": "Viviane - 13 G",
+    "unidade": "84 BL H"
+  },
+  {
+    "nome": "SERGIO SHOJI KISHI",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "102 BL H"
+  },
+  {
+    "nome": "SERGIO SHOJI KISHI",
+    "status": "Eduardo - 241 H",
+    "unidade": "102 BL H"
+  },
+  {
+    "nome": "SERGIO SHOJI KISHI",
+    "status": "Sergio - 264 E",
+    "unidade": "102 BL H"
+  },
+  {
+    "nome": "WILLIAM CORREA DE LUCAS / ADRIANA INOUE DE LUCAS",
+    "status": "Eduardo - 241 H",
+    "unidade": "114 BL H"
+  },
+  {
+    "nome": "WILLIAM CORREA DE LUCAS / ADRIANA INOUE DE LUCAS",
+    "status": "Wanderli - 153 B",
+    "unidade": "114 BL H"
+  },
+  {
+    "nome": "WILLIAM CORREA DE LUCAS / ADRIANA INOUE DE LUCAS",
+    "status": "Viviane - 13 G",
+    "unidade": "114 BL H"
+  },
+  {
+    "nome": "HENRIQUE LOURENÇO FILHO",
+    "status": "Eduardo - 241 H",
+    "unidade": "121 BL H"
+  },
+  {
+    "nome": "HENRIQUE LOURENÇO FILHO",
+    "status": "Viviane - 13 G",
+    "unidade": "121 BL H"
+  },
+  {
+    "nome": "LUIZ ANTONIO MOREIRA",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "122 BL H"
+  },
+  {
+    "nome": "LUIZ ANTONIO MOREIRA",
+    "status": "Eduardo - 241 H",
+    "unidade": "122 BL H"
+  },
+  {
+    "nome": "LUIZ ANTONIO MOREIRA",
+    "status": "Viviane - 13 G",
+    "unidade": "122 BL H"
+  },
+  {
+    "nome": "MARIA APARECIDA BORGES PAPP",
+    "status": "Eduardo - 241 H",
+    "unidade": "171 BL H"
+  },
+  {
+    "nome": "ANA PAULA MARTINS CARNEIRO",
+    "status": "Eduardo - 241 H",
+    "unidade": "182 BL H"
+  },
+  {
+    "nome": "ANA PAULA MARTINS CARNEIRO",
+    "status": "Viviane - 13 G",
+    "unidade": "182 BL H"
+  },
+  {
+    "nome": "OSWALDO LUIS RUSSO MILET FREITASOA",
+    "status": "Viviane - 13 G",
+    "unidade": "203 BL H"
+  },
+  {
+    "nome": "OSWALDO LUIS RUSSO MILET FREITASOA",
+    "status": "Eduardo - 241 H",
+    "unidade": "203 BL H"
+  },
+  {
+    "nome": "OSWALDO LUIS RUSSO MILET FREITASOA",
+    "status": "Aislan - 163 C",
+    "unidade": "203 BL H"
+  },
+  {
+    "nome": "TIAGO STEPHAN WRIGHT",
+    "status": "Eduardo - 241 H",
+    "unidade": "211 BL H"
+  },
+  {
+    "nome": "ANDRE OROZIMBO RODRIGUES",
+    "status": "Aislan - 163 C",
+    "unidade": "232 BL H"
+  },
+  {
+    "nome": "ANDRE OROZIMBO RODRIGUES",
+    "status": "Eduardo - 241 H",
+    "unidade": "232 BL H"
+  },
+  {
+    "nome": "EDUARDO LUIZ PALOMBO / LUCIANA TIEMI KUBA PALOMBO",
+    "status": "Eduardo - 241 H",
+    "unidade": "241 BL H"
+  },
+  {
+    "nome": "THAIS ANGELICA DE SOUZA DIAS NEGRI",
+    "status": "Eduardo - 241 H",
+    "unidade": "252 BL H"
+  },
+  {
+    "nome": "THAIS ANGELICA DE SOUZA DIAS NEGRI",
+    "status": "Aislan - 163 C",
+    "unidade": "252 BL H"
+  },
+  {
+    "nome": "THAIS ANGELICA DE SOUZA DIAS NEGRI",
+    "status": "Wanderli - 153 B",
+    "unidade": "252 BL H"
+  },
+  {
+    "nome": "THIAGO WILLIAN GONÇALVES",
+    "status": "Aislan - 163 C",
+    "unidade": "274 BL H"
+  },
+  {
+    "nome": "THIAGO WILLIAN GONÇALVES",
+    "status": "Rui Etsuo Tanaami - 81 A",
+    "unidade": "274 BL H"
+  },
+  {
+    "nome": "THIAGO WILLIAN GONÇALVES",
+    "status": "Eduardo - 241 H",
+    "unidade": "274 BL H"
+  },
+  {
+    "nome": "ROBERTO PEPATO MELLADO",
+    "status": "Eduardo - 241 H",
+    "unidade": "281 BL H"
+  },
+  {
+    "nome": "ROBERTO PEPATO MELLADO",
+    "status": "Wanderli - 153 B",
+    "unidade": "281 BL H"
+  },
+  {
+    "nome": "ROBERTO PEPATO MELLADO",
+    "status": "Viviane - 13 G",
+    "unidade": "281 BL H"
+  }
+]
+			}
+		]
+	},
     "age_2025_12_22": {
         nome: "AGE - 22/12/2025",
         pautas: [
@@ -1439,8 +4720,25 @@ function getEstiloVoto(status) {
     const s = status.toLowerCase();
     if (s.includes("aprovo")) return { border: "border-aprovo", bg: "bg-aprovo" };
     if (s.includes("reprovo")) return { border: "border-reprovo", bg: "bg-reprovo" };
+	if (s.includes("andré luiz - ac")) return { border: "border-card1", bg: "bg-card1" };
+	if (s.includes("edvania - valim e associados")) return { border: "border-card2", bg: "bg-card2" };
+	if (s.includes("elisangela alves - moradora")) return { border: "border-card3", bg: "bg-card3" };
+	if (s.includes("felipe oliveira - morador")) return { border: "border-card4", bg: "bg-card4" };
+	if (s.includes("gilson ribeiro - morador")) return { border: "border-card5", bg: "bg-card5" };
+	if (s.includes("keise luciane clemente")) return { border: "border-card6", bg: "bg-card6" };
+	if (s.includes("leticia lima")) return { border: "border-card7", bg: "bg-card7" };
+	if (s.includes("ricardo favaro")) return { border: "border-card8", bg: "bg-card8" };
+	if (s.includes("wagner carlos - wsp")) return { border: "border-card9", bg: "bg-card9" };
+	if (s.includes("aislan - 163 c")) return { border: "border-card1", bg: "bg-card1" };
+	if (s.includes("eduardo - 241 h")) return { border: "border-card2", bg: "bg-card2" };
+	if (s.includes("rui etsuo tanaami - 81 a")) return { border: "border-card3", bg: "bg-card3" };
+	if (s.includes("sergio - 264 e")) return { border: "border-card4", bg: "bg-card4" };
+	if (s.includes("viviane - 13 g")) return { border: "border-card5", bg: "bg-card5" };
+	if (s.includes("wanderli - 153 b")) return { border: "border-card6", bg: "bg-card6" };
     if (s.includes("1")) return { border: "border-c1", bg: "bg-c1" };
     if (s.includes("2")) return { border: "border-c2", bg: "bg-c2" };
+	
+	
     return { border: "border-abstencao", bg: "bg-abstencao" };
 }
 
